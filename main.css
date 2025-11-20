@@ -1,0 +1,84 @@
+main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #f2f0f1;
+    margin: 0;
+}
+
+main .image img {
+    width: 100%;
+    max-width: 140%;
+    height: 100%;
+    margin-top: 0;
+}
+main h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    letter-spacing: 0.2rem;
+}
+main p {
+    font-family: 'Gamja Flower', cursive;
+    font-size: 1.2rem;
+    margin: 0.5rem 2rem 0.5rem 3.5rem;
+    line-height: 1.6;
+}
+main .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-left: 3.5rem;
+    width: 200px;
+    text-align: center;
+}
+main .btn:hover {
+    background-color: #444;
+}
+main .statics {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-left: 3.5rem;
+}
+main .statics .stat {
+    text-align: left;
+    border-right: 1px solid #ccc;
+}
+main .statics .stat:last-child {
+    border-right: none;
+}
+main .statics .stat h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+main .statics .stat p {
+    margin: 0 1rem 0 0;
+    color: #555;
+}
+@media (max-width: 768px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main .btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    main h2 {
+        font-size: 2.7rem;
+        margin-top: 2.7rem;
+    }
+    main .statics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main .statics .stat{
+        width: auto;
+    }
+}
