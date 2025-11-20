@@ -87,17 +87,12 @@ header .branding h1 {
     header .container {
     padding: 0;
     }
-    header .search-cart input[type="text"] {
-        width: 20rem;
+}
+@media (max-width: 385px) {
+    header .branding h1 {
+        margin-left: 1rem;
     }
-}  
-@media (max-width: 560px) {
-    header .search-cart input[type="text"] {
-        width: 15rem;
-    }
-} 
-@media (max-width: 510px) {
-    header .search-cart input[type="text"] {
-        width: 12rem;
-    }
-} 
+    header .stuff i{
+    margin: 0 1px;
+}
+}
